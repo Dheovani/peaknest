@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "Fitness Platform",
-    "slug": "fitness-platform",
+    "name": "Peaknest",
+    "slug": "peaknest",
     "version": "1.0.0",
     "orientation": "portrait",
-    "scheme": "fitness-platform",
+    "scheme": "peaknest",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "bundleIdentifier": "com.fitnessplatform.mobile"
+      "bundleIdentifier": "com.peaknest.mobile"
     },
     "android": {
-      "package": "com.fitnessplatform.mobile",
+      "package": "com.peaknest.mobile",
       "predictiveBackGestureEnabled": false
     },
     "web": { "output": "server" },

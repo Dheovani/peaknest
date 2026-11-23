@@ -10,6 +10,7 @@ vi.mock("../lib/auth-client", () => ({ authClient: {} }));
 describe("authentication pages", () => {
   it("renders the login page in Portuguese", () => {
     const html = renderToStaticMarkup(<LoginPage />);
+    expect(html).toContain("Peaknest");
     expect(html).toContain("Bom ter você de volta.");
     expect(html).toContain("Entrar na minha conta");
     expect(html).toContain('href="/register"');

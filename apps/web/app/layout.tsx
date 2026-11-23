@@ -3,7 +3,7 @@ import React from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Fitness Platform",
+  title: "Peaknest",
   description: "Treinos, alimentação e acompanhamento profissional.",
 };
 

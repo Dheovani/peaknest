@@ -1,4 +1,4 @@
-import { healthResponseSchema } from "@fitness/schemas";
+import { healthResponseSchema } from "@peaknest/schemas";
 
 export async function getApiHealth(
   baseUrl: string,

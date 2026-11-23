@@ -1,5 +1,5 @@
 import { Pressable, Text, type PressableProps } from "react-native";
-import { tokens } from "@fitness/design-tokens";
+import { tokens } from "@peaknest/design-tokens";
 
 export function Button({
   label,

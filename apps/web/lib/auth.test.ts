@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { createDatabase } from "@fitness/database";
+import { createDatabase } from "@peaknest/database";
 import { createAuth, getAuth } from "./auth";
 
 const mocks = vi.hoisted(() => ({
@@ -8,8 +8,8 @@ const mocks = vi.hoisted(() => ({
   betterAuth: vi.fn(() => ({ handler: vi.fn() })),
 }));
 
-vi.mock("@fitness/database", () => ({ createDatabase: mocks.createDatabase }));
-vi.mock("@fitness/database/schema", () => ({ user: { kind: "user-table" } }));
+vi.mock("@peaknest/database", () => ({ createDatabase: mocks.createDatabase }));
+vi.mock("@peaknest/database/schema", () => ({ user: { kind: "user-table" } }));
 vi.mock("@better-auth/drizzle-adapter", () => ({
   drizzleAdapter: mocks.drizzleAdapter,
 }));

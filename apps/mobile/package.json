@@ -1,5 +1,5 @@
 {
-  "name": "@fitness/mobile",
+  "name": "@peaknest/mobile",
   "version": "0.0.0",
   "private": true,
   "main": "expo-router/entry",
@@ -13,9 +13,9 @@
     "test:coverage": "jest --coverage --runInBand"
   },
   "dependencies": {
-    "@fitness/config": "workspace:*",
-    "@fitness/design-tokens": "workspace:*",
-    "@fitness/ui-mobile": "workspace:*",
+    "@peaknest/config": "workspace:*",
+    "@peaknest/design-tokens": "workspace:*",
+    "@peaknest/ui-mobile": "workspace:*",
     "expo": "~58.0.26",
     "expo-constants": "~58.0.16",
     "expo-linking": "~58.0.17",

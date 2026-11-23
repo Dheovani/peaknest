@@ -1,8 +1,8 @@
 import { drizzleAdapter } from "@better-auth/drizzle-adapter";
-import { createDatabase } from "@fitness/database";
-import { parseServerEnv } from "@fitness/config/env";
+import { createDatabase } from "@peaknest/database";
+import { parseServerEnv } from "@peaknest/config/env";
 import { betterAuth } from "better-auth";
-import * as schema from "@fitness/database/schema";
+import * as schema from "@peaknest/database/schema";
 
 export function createAuth(
   env: NodeJS.ProcessEnv = process.env,

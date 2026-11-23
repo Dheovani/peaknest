@@ -1,4 +1,4 @@
-import { ptBR } from "@fitness/config/messages";
+import { ptBR } from "@peaknest/config/messages";
 import Link from "next/link";
 import React from "react";
 import type { ReactNode } from "react";
@@ -25,7 +25,7 @@ export function AuthShell({
             aria-hidden="true"
             className="flex size-10 items-center justify-center rounded-xl bg-primary text-lg font-bold text-primary-foreground"
           >
-            F
+            P
           </span>
           <span className="text-sm font-semibold tracking-tight">
             {copy.brand}

@@ -1,4 +1,4 @@
-appId: com.fitnessplatform.mobile
+appId: com.peaknest.mobile
 ---
 - launchApp
 - assertVisible: "Seu treino, no seu ritmo."

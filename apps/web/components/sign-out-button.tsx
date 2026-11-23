@@ -1,7 +1,7 @@
 "use client";
 
-import { ptBR } from "@fitness/config/messages";
-import { Button } from "@fitness/ui-web/button";
+import { ptBR } from "@peaknest/config/messages";
+import { Button } from "@peaknest/ui-web/button";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { useState } from "react";

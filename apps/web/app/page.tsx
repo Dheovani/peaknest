@@ -1,5 +1,5 @@
-import { Button } from "@fitness/ui-web/button";
-import { ptBR } from "@fitness/config/messages";
+import { Button } from "@peaknest/ui-web/button";
+import { ptBR } from "@peaknest/config/messages";
 import { Badge } from "../components/ui/badge";
 import React from "react";
 import Link from "next/link";

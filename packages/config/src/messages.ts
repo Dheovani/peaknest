@@ -7,7 +7,7 @@ export const ptBR = {
     action: "Entrar em breve",
   },
   auth: {
-    brand: "Fitness Platform",
+    brand: "Peaknest",
     eyebrow: "ACESSO À PLATAFORMA",
     sideEyebrow: "SEU RITMO, SEU CAMINHO",
     loginTitle: "Bom ter você de volta.",

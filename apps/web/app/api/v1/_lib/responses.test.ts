@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { apiErrorSchema } from "@fitness/schemas";
+import { apiErrorSchema } from "@peaknest/schemas";
 import { ApiFailure, apiErrorResponse, logApiRequest } from "./responses";
 
 describe("API responses", () => {

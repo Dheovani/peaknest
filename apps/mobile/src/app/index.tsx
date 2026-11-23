@@ -1,7 +1,7 @@
 import { View, Text, useColorScheme } from "react-native";
-import { Button } from "@fitness/ui-mobile/button";
-import { ptBR } from "@fitness/config/messages";
-import { tokens } from "@fitness/design-tokens";
+import { Button } from "@peaknest/ui-mobile/button";
+import { ptBR } from "@peaknest/config/messages";
+import { tokens } from "@peaknest/design-tokens";
 
 const copy = ptBR.foundation;
 

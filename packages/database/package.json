@@ -1,5 +1,5 @@
 {
-  "name": "@fitness/database",
+  "name": "@peaknest/database",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -18,7 +18,7 @@
   "dependencies": {
     "drizzle-orm": "^0.45.0",
     "postgres": "^3.4.0",
-    "@fitness/config": "workspace:*"
+    "@peaknest/config": "workspace:*"
   },
   "devDependencies": {
     "drizzle-kit": "^0.31.0"

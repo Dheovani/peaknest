@@ -43,8 +43,8 @@ export default [
           patterns: [
             {
               group: [
-                "@fitness/database",
-                "@fitness/database/*",
+                "@peaknest/database",
+                "@peaknest/database/*",
                 "server-only",
                 "next/*",
               ],

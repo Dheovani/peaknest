@@ -1,5 +1,5 @@
 {
-  "name": "@fitness/ui-mobile",
+  "name": "@peaknest/ui-mobile",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -7,7 +7,7 @@
     "./button": "./src/button.tsx"
   },
   "dependencies": {
-    "@fitness/design-tokens": "workspace:*"
+    "@peaknest/design-tokens": "workspace:*"
   },
   "peerDependencies": {
     "react": "^19.0.0",

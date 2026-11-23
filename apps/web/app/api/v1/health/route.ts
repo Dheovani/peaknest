@@ -1,4 +1,4 @@
-import { normalizeRequestId } from "@fitness/domain";
+import { normalizeRequestId } from "@peaknest/domain";
 import { NextResponse, type NextRequest } from "next/server";
 import { logApiRequest } from "../_lib/responses";
 

@@ -9,6 +9,7 @@ test("personal registration, sign-out, sign-in and account protection", async ({
 
   await page.goto("/account");
   await expect(page).toHaveURL(/\/login$/);
+  await expect(page).toHaveTitle("Peaknest");
 
   await page.getByRole("link", { name: "Criar conta" }).click();
   await expect(

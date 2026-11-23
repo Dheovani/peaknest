@@ -1,4 +1,4 @@
-import { ptBR } from "@fitness/config/messages";
+import { ptBR } from "@peaknest/config/messages";
 import React from "react";
 import { AuthForm } from "../../components/auth-form";
 import { AuthShell } from "../../components/auth-shell";
