@@ -1,0 +1,7 @@
+# Testing strategy
+
+Vitest covers pure TypeScript, web components, and API logic. Jest with React Native Testing Library covers native components. Integration tests require a disposable PostgreSQL database, supplied through `TEST_DATABASE_URL`. Browser smoke tests use Playwright in `tests/e2e/web`; native smoke tests use Maestro in `tests/e2e/mobile` on actual Android/iOS emulators. A browser test does not substitute for native coverage.
+
+Coverage gates require at least 90% each for lines, statements, branches, and functions. Source inclusion must count untested executable files. Generated files, tests, declarations, and declarative tool configuration may be excluded. Security-critical modules added later require independent module targets and negative cases. Reports are written under root `coverage/`. Current E2E files verify only the foundation shell and health route, not product flows. As slices land, add sign-in, workout logging, nutrition, invitation, fork, consent/revocation, capacity, and unauthorized access scenarios with deterministic fixtures.
+
+Vitest measures web, shared, database adapter, and `ui-mobile` source; Jest measures the Expo app source. The native button also has a React Native Testing Library press test. The empty Drizzle schema is declarative and excluded from executable coverage. The current 100% result reflects a deliberately small foundation, not product readiness.
