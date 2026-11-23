@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "../../../packages/ui-web/src";
 
 :root {
   --background: #f8fafc;
@@ -37,4 +38,10 @@
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+@layer components {
+  .auth-input {
+    @apply flex min-h-12 w-full rounded-lg border border-border bg-card px-4 text-base text-foreground outline-none transition-colors placeholder:text-muted-foreground/75 focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-primary/20;
+  }
 }

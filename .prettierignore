@@ -12,5 +12,6 @@ node_modules
 coverage
 tests/artifacts
 pnpm-lock.yaml
+packages/database/drizzle/meta
 apps/mobile/assets
 docs/product/technical-specifications.md

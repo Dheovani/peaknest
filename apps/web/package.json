@@ -10,14 +10,18 @@
     "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
+    "@better-auth/drizzle-adapter": "1.7.27",
     "@fitness/config": "workspace:*",
+    "@fitness/database": "workspace:*",
     "@fitness/design-tokens": "workspace:*",
     "@fitness/domain": "workspace:*",
     "@fitness/schemas": "workspace:*",
     "@fitness/ui-web": "workspace:*",
     "@radix-ui/react-slot": "^1.5.0",
+    "better-auth": "1.7.27",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dotenv": "17.0.0",
     "next": "16.3.8",
     "react": "19.2.8",
     "react-dom": "19.2.8",
@@ -28,6 +32,7 @@
     "@tailwindcss/postcss": "^4.1.0",
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.5",
+    "auth": "1.7.27",
     "tailwindcss": "^4.1.0"
   }
 }

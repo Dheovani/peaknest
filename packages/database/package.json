@@ -8,6 +8,11 @@
       "react-native": null,
       "browser": null,
       "default": "./src/index.ts"
+    },
+    "./schema": {
+      "react-native": null,
+      "browser": null,
+      "default": "./src/schema.ts"
     }
   },
   "dependencies": {

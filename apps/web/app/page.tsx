@@ -2,6 +2,7 @@ import { Button } from "@fitness/ui-web/button";
 import { ptBR } from "@fitness/config/messages";
 import { Badge } from "../components/ui/badge";
 import React from "react";
+import Link from "next/link";
 
 const copy = ptBR.foundation;
 
@@ -23,8 +24,8 @@ export default function Home() {
         </p>
       </div>
       <div>
-        <Button disabled aria-label={copy.action}>
-          {copy.action}
+        <Button asChild className="min-h-11 px-5">
+          <Link href="/login">{ptBR.auth.homeLoginAction}</Link>
         </Button>
       </div>
     </main>
