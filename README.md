@@ -1,6 +1,6 @@
 # Fitness Platform
 
-Foundation for a B2B2C fitness, nutrition, and professional coaching platform. The commercial name is undecided. Product behavior is defined in [the technical specification](docs/product/technical-specifications.md). This foundation does not yet implement identity, workouts, nutrition, or subscriptions.
+Foundation for a B2B2C fitness, nutrition, and professional coaching platform. The commercial name is undecided. Product behavior is defined in [the technical specification](docs/product/technical-specifications.md). Web personal registration, login, logout, and a protected account page are implemented. Workspaces, professional verification, workouts, nutrition, subscriptions, and mobile login are still pending.
 
 ## Prerequisites
 
@@ -13,9 +13,9 @@ Foundation for a B2B2C fitness, nutrition, and professional coaching platform. T
 1. Run `corepack pnpm install` from the repository root.
 2. Copy `.env.example` to `.env` and replace `BETTER_AUTH_SECRET` with a random value of at least 32 characters.
 3. Run `docker compose up -d postgres` and `corepack pnpm db:migrate`.
-4. Run `corepack pnpm dev:web` or `corepack pnpm dev:mobile`.
+4. Run `corepack pnpm dev:web` and open `http://localhost:3000/login`. Create a free personal account at `/register` to test the flow.
 
-The web app starts at `http://localhost:3000`; the mobile app opens through Expo. An Android emulator uses `http://10.0.2.2:3000` for the host API once client calls are added. Set `EXPO_PUBLIC_API_URL` accordingly. No backend secret belongs in an `EXPO_PUBLIC_*` value.
+The web app starts at `http://localhost:3000`; the mobile app opens through Expo with `corepack pnpm dev:mobile`. On Windows PowerShell, use `pnpm.cmd` if execution policy blocks `pnpm.ps1`. An Android emulator uses `http://10.0.2.2:3000` for the host API once client calls are added. Set `EXPO_PUBLIC_API_URL` accordingly. No backend secret belongs in an `EXPO_PUBLIC_*` value.
 
 ## Commands
 
@@ -33,4 +33,4 @@ The web app starts at `http://localhost:3000`; the mobile app opens through Expo
 | `coverage`    | Generated reports, ignored by Git                                                                    |
 | `scripts`     | Database migration and seed entry points                                                             |
 
-The first feature slice is **Identity & Workspaces**. See [ADR-0001](docs/decisions/ADR-0001-repository-and-stack.md) for stack decisions and [testing strategy](docs/testing/strategy.md) for gates and current gaps.
+The first feature slice is **Identity & Workspaces**; only web personal-account access is implemented so far. See [ADR-0001](docs/decisions/ADR-0001-repository-and-stack.md) for stack decisions and [testing strategy](docs/testing/strategy.md) for gates and current gaps.

@@ -1,9 +1,73 @@
 openapi: 3.1.0
 info:
   title: Fitness Platform API
-  version: 1.0.0-foundation
-  description: Foundation contract. Product endpoints will be added by vertical slice.
+  version: 1.1.0-identity-access
+  description: Foundation and web personal-account access contracts. Better Auth owns authentication routes outside /api/v1.
 paths:
+  /api/auth/sign-up/email:
+    post:
+      summary: Create a free personal account
+      operationId: signUpWithEmail
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name, email, password]
+              properties:
+                name:
+                  type: string
+                  minLength: 2
+                email:
+                  type: string
+                  format: email
+                password:
+                  type: string
+                  minLength: 8
+      responses:
+        "200":
+          description: Personal account and browser session created
+        "400":
+          description: Invalid account input
+  /api/auth/sign-in/email:
+    post:
+      summary: Sign in with email and password
+      operationId: signInWithEmail
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password]
+              properties:
+                email:
+                  type: string
+                  format: email
+                password:
+                  type: string
+      responses:
+        "200":
+          description: Browser session cookie issued
+        "401":
+          description: Credentials rejected
+        "429":
+          description: Sign-in rate limit exceeded
+  /api/auth/sign-out:
+    post:
+      summary: End the current browser session
+      operationId: signOut
+      responses:
+        "200":
+          description: Browser session invalidated
+  /api/auth/get-session:
+    get:
+      summary: Read the current browser session
+      operationId: getSession
+      responses:
+        "200":
+          description: Session data or null when unauthenticated
   /api/v1/health:
     get:
       summary: Check versioned API availability
