@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Fitness Platform",
+    "slug": "fitness-platform",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "fitness-platform",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.fitnessplatform.mobile"
+    },
+    "android": {
+      "package": "com.fitnessplatform.mobile",
+      "predictiveBackGestureEnabled": false
+    },
+    "web": { "output": "server" },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

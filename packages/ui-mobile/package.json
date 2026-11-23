@@ -1,0 +1,23 @@
+{
+  "name": "@fitness/ui-mobile",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./button": "./src/button.tsx"
+  },
+  "dependencies": {
+    "@fitness/design-tokens": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-native": "^0.88.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "nativewind": "4.2.7"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}
