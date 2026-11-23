@@ -1,9 +1,10 @@
-# Fitness Platform — Technical Product & Engineering Specification
+# Peaknest — Technical Product & Engineering Specification
 
 **Status:** Approved product scope / implementation baseline  
-**Version:** 1.1  
+**Version:** 1.2
 **Date:** 2026-11-23  
-**Working project name:** `fitness-platform` (brand name TBD)  
+**Product name:** Peaknest
+**Repository name:** `peaknest`
 **Primary audience:** Codex, engineering contributors, product owner  
 **Language:** English for all project documentation, code, comments, tests, commit messages, API descriptions, and architecture records; initial end-user locale: `pt-BR`.
 
@@ -19,6 +20,7 @@ Build a business-to-business-to-consumer (B2B2C) platform connecting independent
 - **DEC-002 Professional collaboration:** A professional may invite another verified professional as a workspace collaborator. **Each student's explicit, granular authorization** is required before sharing that student's data with the collaborator. Invitation alone grants no student data access.
 - **DEC-003 Billing:** Students and personal users are free. A professional workspace owner pays a subscription **tiered by active students**; one student counts once per workspace even when monitored by multiple collaborators.
 - **DEC-004 First release:** The MVP includes workout planning/logging, cardio, nutrition diary/macronutrients, professional nutrition prescriptions, progress, professional collaboration, and subscription management.
+- **DEC-005 Product name:** The approved product name is **Peaknest**. App store identifiers remain provisional until ownership is confirmed.
 
 ### 1.2 Actors and capabilities
 
@@ -310,7 +312,7 @@ These rules are normative. Enforcement must occur in the service/domain layer an
 ### 6.2 Required root-level layout
 
 ```text
-fitness-platform/
+peaknest/
 ├── apps/
 │   ├── mobile/                  # Expo / React Native / Expo Router
 │   └── web/                     # Next.js, web console, /api/v1 backend
@@ -518,7 +520,7 @@ A change may be marked done only when:
 
 ## 14. Open decisions / do not invent silently
 
-- **Product branding:** name and store identifiers undecided; use neutral working identifiers until chosen.
+- **Store identifiers:** Peaknest is the approved product name; confirm final app store identifiers and ownership before release.
 - **Billing currency/provider/prices:** tiers are agreed; actual prices, student caps and payment provider need commercial confirmation. A preliminary illustrative set may be 10 / 30 / 100 / >100 active students, but **these are not approved price tiers**.
 - **Exact professional verification mechanism:** verification workflow and Brazilian profession-specific obligations need legal/operational review.
 - **Food database/license:** choose documented, lawful data source(s); do not claim accuracy from an unsourced catalog.

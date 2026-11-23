@@ -1,6 +1,6 @@
-# Fitness Platform
+# Peaknest
 
-Foundation for a B2B2C fitness, nutrition, and professional coaching platform. The commercial name is undecided. Product behavior is defined in [the technical specification](docs/product/technical-specifications.md). Web personal registration, login, logout, and a protected account page are implemented. Workspaces, professional verification, workouts, nutrition, subscriptions, and mobile login are still pending.
+Peaknest is a B2B2C fitness, nutrition, and professional coaching platform. Product behavior is defined in [the technical specification](docs/product/technical-specifications.md). Web personal registration, login, logout, and a protected account page are implemented. Workspaces, professional verification, workouts, nutrition, subscriptions, and mobile login are still pending.
 
 ## Prerequisites
 

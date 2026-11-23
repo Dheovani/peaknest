@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: Fitness Platform API
+  title: Peaknest API
   version: 1.1.0-identity-access
   description: Foundation and web personal-account access contracts. Better Auth owns authentication routes outside /api/v1.
 paths:
