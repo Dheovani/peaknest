@@ -1,0 +1,5 @@
+appId: com.fitnessplatform.mobile
+---
+- launchApp
+- assertVisible: "Seu treino, no seu ritmo."
+- assertVisible: "Entrar em breve"
