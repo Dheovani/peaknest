@@ -15,6 +15,7 @@ This block is written and re-added by `turbo` before repository-scoped commands 
 - Read `docs/product/technical-specifications.md` before application changes. It overrides other project documentation.
 - Keep documentation, code comments, identifiers, API descriptions, and test names in English. User-facing copy starts in `pt-BR` and belongs behind localization keys.
 - Keep only `apps/web` and `apps/mobile` runnable. Database and auth secrets stay server-side; mobile and shared packages must not import `@peaknest/database`.
+- Give enabled web buttons a pointer cursor; disabled buttons must not imply they are clickable.
 - Implement one product vertical slice at a time with RF/RN/RNF traceability, authorization checks, migrations, API contract, client UI, and negative-case tests.
 - Before reporting a change complete, run formatting, lint, strict typecheck, unit/integration tests, coverage (90% each metric), and relevant web/native E2E where infrastructure exists. Report any unrun command accurately.
 - Preserve the managed Turborepo block above. Read installed `turbo/docs/README.md` and relevant local pages before changing Turbo configuration.

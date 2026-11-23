@@ -1,6 +1,17 @@
 import { randomUUID } from "node:crypto";
 import { expect, test } from "@playwright/test";
 
+test("enabled login buttons use a pointer cursor", async ({ page }) => {
+  await page.goto("/login");
+  await expect(page.getByRole("button", { name: "Mostrar senha" })).toHaveCSS(
+    "cursor",
+    "pointer",
+  );
+  await expect(
+    page.getByRole("button", { name: "Entrar na minha conta" }),
+  ).toHaveCSS("cursor", "pointer");
+});
+
 test("personal registration, sign-out, sign-in and account protection", async ({
   page,
 }) => {

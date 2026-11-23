@@ -16,6 +16,7 @@ describe("Button", () => {
   it("renders the outline variant", () => {
     const html = renderToStaticMarkup(<Button variant="outline">Open</Button>);
     expect(html).toContain("border-border");
+    expect(html).toContain("cursor-pointer");
   });
 
   it("renders a link as the focusable element", () => {
