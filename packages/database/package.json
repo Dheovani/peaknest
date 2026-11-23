@@ -1,0 +1,26 @@
+{
+  "name": "@fitness/database",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "react-native": null,
+      "browser": null,
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.0",
+    "postgres": "^3.4.0",
+    "@fitness/config": "workspace:*"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "migrate": "tsx ../../scripts/db-migrate.ts",
+    "seed": "tsx ../../scripts/db-seed.ts"
+  }
+}
