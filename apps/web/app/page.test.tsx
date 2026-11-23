@@ -7,6 +7,7 @@ describe("foundation page", () => {
   it("shows a Portuguese foundation state", () => {
     const html = renderToStaticMarkup(<Home />);
     expect(html).toContain("Seu treino, no seu ritmo.");
-    expect(html).toContain("Entrar em breve");
+    expect(html).toContain('href="/login"');
+    expect(html).toContain("Entrar");
   });
 });

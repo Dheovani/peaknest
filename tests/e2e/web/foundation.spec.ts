@@ -8,9 +8,10 @@ test("foundation page and versioned health API are reachable", async ({
   await expect(
     page.getByRole("heading", { name: "Seu treino, no seu ritmo." }),
   ).toBeVisible();
-  await expect(
-    page.getByRole("button", { name: "Entrar em breve" }),
-  ).toBeDisabled();
+  await expect(page.getByRole("link", { name: "Entrar" })).toHaveAttribute(
+    "href",
+    "/login",
+  );
   const response = await request.get("/api/v1/health");
   expect(response.ok()).toBe(true);
   expect(await response.json()).toEqual({ status: "ok", version: "v1" });

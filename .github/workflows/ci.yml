@@ -20,6 +20,8 @@ jobs:
     env:
       DATABASE_URL: postgresql://fitness:fitness@127.0.0.1:5432/fitness_test
       TEST_DATABASE_URL: postgresql://fitness:fitness@127.0.0.1:5432/fitness_test
+      BETTER_AUTH_SECRET: ci-only-auth-secret-at-least-thirty-two-characters
+      BETTER_AUTH_URL: http://localhost:3000
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4

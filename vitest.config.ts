@@ -47,6 +47,7 @@ export default defineConfig({
       exclude: [
         "**/*.test.{ts,tsx}",
         "**/*.d.ts",
+        "packages/database/src/auth-schema.ts",
         "packages/database/src/schema.ts",
       ],
       reporter: ["text", "html", "lcov"],
