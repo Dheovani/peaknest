@@ -1,0 +1,16 @@
+node_modules
+.corepack
+.local-bin
+.playwright-browsers
+.pnpm-store
+.cache
+.claude
+.vscode
+.idea
+.next
+.expo
+coverage
+tests/artifacts
+pnpm-lock.yaml
+apps/mobile/assets
+docs/product/technical-specifications.md

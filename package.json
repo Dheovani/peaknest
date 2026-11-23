@@ -1,29 +1,47 @@
 {
-  "name": "peaknest",
+  "name": "fitness-platform",
+  "type": "module",
   "private": true,
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
-  },
-  "devDependencies": {
-    "prettier": "3.9.6",
-    "turbo": "^2.11.13",
-    "typescript": "7.0.2"
-  },
+  "packageManager": "pnpm@11.27.0",
   "engines": {
     "node": ">=24"
   },
-  "devEngines": {
-    "packageManager": {
-      "name": "npm",
-      "version": "11.6.2"
-    }
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:web": "pnpm --filter @fitness/web dev",
+    "dev:mobile": "pnpm --filter @fitness/mobile dev",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit -p tsconfig.json && turbo run typecheck",
+    "test": "pnpm test:unit && pnpm test:integration",
+    "test:unit": "vitest run --project unit && pnpm --filter @fitness/mobile test",
+    "test:integration": "vitest run --project integration",
+    "test:coverage": "vitest run --project unit --coverage && pnpm --filter @fitness/mobile test:coverage",
+    "test:e2e:web": "playwright test",
+    "test:e2e:mobile": "maestro test tests/e2e/mobile",
+    "build": "turbo run build",
+    "db:migrate": "pnpm --filter @fitness/database migrate",
+    "db:seed": "pnpm --filter @fitness/database seed"
   },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@types/node": "^24.0.0",
+    "eslint": "^9.39.0",
+    "eslint-config-next": "16.3.8",
+    "eslint-plugin-import": "^2.32.0",
+    "drizzle-orm": "^0.45.0",
+    "dotenv": "^17.0.0",
+    "postgres": "^3.4.0",
+    "prettier": "3.9.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
+    "turbo": "^2.11.13",
+    "typescript": "^5.9.3",
+    "tsx": "^4.20.0",
+    "vitest": "^3.2.4"
+  }
 }

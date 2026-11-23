@@ -1,0 +1,17 @@
+{
+  "name": "@fitness/config",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./env": "./src/env.ts",
+    "./messages": "./src/messages.ts"
+  },
+  "dependencies": {
+    "zod": "^4.0.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  }
+}
